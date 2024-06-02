@@ -1,0 +1,14 @@
+# Config file dedicated to the user's personal aliases shared between all exegol containers
+alias sudo='sudo ' # Trick to have ALL aliases available with sudo <3
+alias clear='clear -x'
+alias burl='curl -k -x http://127.0.0.1:8080'
+alias vim='f() { echo "Do not use vim to avoid log poisonning" }; f'
+alias tmux='tmux -2'
+alias cheat='f(){ curl -s "cheat.sh/$1";  unset -f f; }; f'
+# alias code='code --no-sandbox --user-data-dir'
+
+### Pentest tools
+
+alias cme='nxc'
+alias udp-proto-scanner.pl='/opt/my-resources/tools/udp-proto-scanner/udp-proto-scanner.pl'
+alias pty4all='cd /opt/my-resources/tools/pty4all/ && ./socat-multi-handler.sh'
