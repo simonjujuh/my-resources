@@ -20,3 +20,11 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm || true
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add -
 echo "deb https://download.sublimetext.com/ apt/stable/" | tee /etc/apt/sources.list.d/sublime-text.list
 apt update && apt install sublime-text
+
+# Install cheat
+cd /tmp \
+  && wget https://github.com/cheat/cheat/releases/download/4.4.2/cheat-linux-amd64.gz \
+  && gunzip cheat-linux-amd64.gz \
+  && chmod +x cheat-linux-amd64 \
+  && sudo mv cheat-linux-amd64 /usr/local/bin/cheat
+mkdir -p /root/.config/cheat && cp -r /opt/my-resources/setup/cheat/conf.yml /root/.config/cheat/conf.yml
