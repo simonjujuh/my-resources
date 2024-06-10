@@ -20,7 +20,32 @@ add-history() {
     grep -qxF "$@" "${HISTORY_FILE}" || echo "$@" >> "${HISTORY_FILE}" 
 }
 
+git_clone_and_pull() {
+    dest=${LISTS_DIR}/$(echo "$1" | awk -F '/' '{ print $NF }' | tr '[A-Z]' '[a-z]')
+    [ -d "${dest}" ] || git clone "$url" "$dest"
+    cd "${dest}" && git pull 
+}
+
 ### Install Tools
+
+
+install_smbclientng() {
+    python3 -m pip install smbclientng
+}
+
+install_nxc_configuration() {
+    sed -i "s/log_mode = False/log_mode = True/" ~/.nxc/nxc.conf
+    sed -i "s/reveal_chars_of_pwd = 0/reveal_chars_of_pwd = 2/" ~/.nxc/nxc.conf
+}
+
+install_msfdb_configuration() {
+    service postgresql start
+    msfdb init
+}
+
+install_medusa() {
+    apt install --yes medusa
+}
 
 # exec > "${LOG_FILE}" 2>&1
 
@@ -28,17 +53,6 @@ add-history() {
 # git clone https://github.com/CiscoCXSecurity/udp-proto-scanner $TOOLS_DIR/udp-proto-scanner || true
 # add-alias "alias udp-proto-scanner.pl='${TOOLS_DIR}/udp-proto-scanner/udp-proto-scanner.pl'"
 # add-history 'udp-proto-scanner.pl -f $IP_FILE'
-
-# # Update nxc configuration
-# sed -i "s/log_mode = False/log_mode = True/" ~/.nxc/nxc.conf
-# sed -i "s/reveal_chars_of_pwd = 0/reveal_chars_of_pwd = 2/" ~/.nxc/nxc.conf
-
-# # Metasploit installation
-# service postgresql start
-# msfdb init
-
-# # Install medusa
-# apt install --yes medusa
 
 # # Install Pty4all (easy reverse shell)
 # git clone https://github.com/laluka/pty4all $TOOLS_DIR/pty4all || true
@@ -70,4 +84,8 @@ install_git_wordlists() {
 
 ### Call install functions
 
+install_medusa
+install_smbclientng
+install_nxc_configuration
+install_msfdb_configuration
 install_git_wordlists
