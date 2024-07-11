@@ -14,3 +14,10 @@ setopt sharehistory
 alias ll='ls -lF --group-directories-first'
 alias la='ls -A --group-directories-first'
 alias l='ls -CF --group-directories-first'
+
+# Wiki read file
+alias wkread='f() { cd /opt/my-resources/wiki && bat -p -l md "$(find . -type f -name "*.md" | fzf)" }; f'
+# Wiki write / edit file
+alias wkedit='f() { cd /opt/my-resources/wiki && subl "$(find . -type f -name "*.md" | fzf)" }; f'
+# Wiki open
+alias wkopen='subl /opt/my-resources/wiki'

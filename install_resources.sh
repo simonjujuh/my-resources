@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ### Variables
+
 LOG_FILE="/tmp/install_resources.$(date +%F_T).log"
 TOOLS_DIR=/opt/my-resources/tools
 LISTS_DIR=/opt/my-resources/lists
@@ -34,6 +35,7 @@ install_smbclientng() {
 }
 
 install_nxc_configuration() {
+    netexec
     sed -i "s/log_mode = False/log_mode = True/" ~/.nxc/nxc.conf
     sed -i "s/reveal_chars_of_pwd = 0/reveal_chars_of_pwd = 2/" ~/.nxc/nxc.conf
 }
@@ -82,10 +84,15 @@ install_git_wordlists() {
 
 } 
 
-### Call install functions
+### Install utils tools
+install_batcat() {
+    sudo apt install bat --yes
+}
 
+### Call install functions
 install_medusa
 install_smbclientng
 install_nxc_configuration
 install_msfdb_configuration
 install_git_wordlists
+install_batcat

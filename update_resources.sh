@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Restore properties
+sudo chown -R $(id -u):$(id -g) tools lists wiki
+
 # store the current dir
 CUR_DIR=$(pwd)
 
