@@ -1,3 +1,1 @@
 # Config file dedicated to the user's personal history shared between all exegol containers
-udp-proto-scanner.pl $TARGET
-udp-proto-scanner.pl -f $TARGETS_FILE
