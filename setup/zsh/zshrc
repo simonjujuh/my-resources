@@ -10,7 +10,12 @@ autoload -Uz compinit && compinit
 setopt incappendhistory
 setopt sharehistory
 
-# Overwrite exegol ones
-alias ll='ls -lF --group-directories-first'
-alias la='ls -A --group-directories-first'
-alias l='ls -CF --group-directories-first'
+# source /workspace/.env
+# WORKDIR=/workspace
+# TARGETS=/workspace/targets
+# ATTACKS=/workspace/attacks
+# LOOT=/workspace/loot
+# DIR_TARGETS=/workspace/targets
+# DIR_LOOT=/workspace/loot
+# DIR_ATTACKS=/workspace/attacks
+# DC_HOST=$DC
