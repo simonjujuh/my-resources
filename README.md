@@ -5,7 +5,7 @@ Resources used for my custom exegol installation.
 ## Installation
 
 ```bash
-git clone /tmp/my-resources https://github.com/simonjujuh/my-resources
-sudo cp -r /tmp/my-resources/* /root/.exegol/my-resources/
-sudo rm -r /root/.exegol/my-resources/README.md /tmp/my-resources
+git clone https://github.com/simonjujuh/my-resources /tmp/my-resources
+sudo -E cp -r /tmp/my-resources/* $HOME/.exegol/my-resources/
+sudo -E rm -r $HOME/.exegol/my-resources/README.md /tmp/my-resources
 ```
