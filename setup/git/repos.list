@@ -1,6 +1,4 @@
 # List of repos you want to pull, with path
-https://github.com/1N3/BruteX, /opt/lists/intruderpayloads
-https://github.com/1N3/IntruderPayloads, /opt/lists/intruderpayloads
-https://github.com/danielmiessler/SecLists, /opt/lists/seclists
-
-# https://github.com/swisskyrepo/PayloadsAllTheThings
+https://github.com/1N3/BruteX, /opt/brutex
+https://github.com/1N3/IntruderPayloads, /opt/intruderpayloads
+https://github.com/swisskyrepo/PayloadsAllTheThings, /opt/paylall

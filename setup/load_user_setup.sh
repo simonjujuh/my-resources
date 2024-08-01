@@ -19,7 +19,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm || true
 # Nxc configuration
 cp -r /opt/my-resources/setup/nxc/nxc.conf /root/.nxc/nxc.conf
 
-# clone and pull git repositories
+# Clone and pull git repositories
 bash /opt/my-resources/setup/git/clone.sh
 
 # Permissions fix
