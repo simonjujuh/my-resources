@@ -10,6 +10,10 @@ autoload -Uz compinit && compinit
 setopt incappendhistory
 setopt sharehistory
 
+alias ls="exa"
+alias ll='exa -la --group-directories-first --no-user --no-filesize --no-time --no-permissions'
+alias la='exa -la --group-directories-first'
+
 # source /workspace/.env
 # WORKDIR=/workspace
 # TARGETS=/workspace/targets

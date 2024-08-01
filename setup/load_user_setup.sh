@@ -16,17 +16,11 @@ vim +PluginInstall +qall
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm || true
 /bin/bash ~/.tmux/plugins/tpm/bin/install_plugins
 
-# Install sublime text
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | apt-key add -
-echo "deb https://download.sublimetext.com/ apt/stable/" | tee /etc/apt/sources.list.d/sublime-text.list
-apt update && apt install sublime-text
-
-# Install exa, replacement for ls
-export DEBIAN_FRONTEND=noninteractive 
-apt-get install --yes exa
-
 # Nxc configuration
 cp -r /opt/my-resources/setup/nxc/nxc.conf /root/.nxc/nxc.conf
+
+# clone and pull git repositories
+bash /opt/my-resources/setup/git/clone.sh
 
 # Permissions fix
 find /workspace/ -type d -exec chmod 770 {} \; -exec chmod g+s {} \;
@@ -45,7 +39,7 @@ find /workspace/ -type f -exec chmod 660 {} \;
 # then
 #     touch $FILE
 # fi
-# echo "CLIENT=''" >> $FILE
+# echo "CLIENT=''" > $FILE
 # echo "DOMAIN=''" >> $FILE
 # echo "FQDN=''" >> $FILE
 # echo "DC=''" >> $FILE
