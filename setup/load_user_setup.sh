@@ -34,21 +34,22 @@ find /workspace/ -type f -exec chmod 660 {} \;
 # echo -n > ~/.zsh_history
 
 # pentest environment variables source
-# FILE=/workspace/.env
-# if [ ! -f $FILE ]
-# then
-#     touch $FILE
-# fi
-# echo "CLIENT=''" > $FILE
-# echo "DOMAIN=''" >> $FILE
-# echo "FQDN=''" >> $FILE
-# echo "DC=''" >> $FILE
-# echo "DC2=''" >> $FILE
-# echo "DC3=''" >> $FILE
-# echo "USER=''" >> $FILE
-# echo "PASSWORD=''" >> $FILE
-# echo "USER_ADM=''" >> $FILE
-# echo "PASSWORD_ADM=''" >> $FILE
+FILE=/workspace/.env
+if [ ! -f $FILE ]
+then
+    touch $FILE
+    echo "RHOST=''" > $FILE
+    echo "CLIENT=''" >> $FILE
+    echo "DOMAIN=''" >> $FILE
+    echo "FQDN=''" >> $FILE
+    echo "DC=''" >> $FILE
+    echo "DC2=''" >> $FILE
+    echo "DC3=''" >> $FILE
+    echo "USER=''" >> $FILE
+    echo "PASSWORD=''" >> $FILE
+    echo "USER_ADM=''" >> $FILE
+    echo "PASSWORD_ADM=''" >> $FILE
+fi
 
 # # build internal pentest tree
 # mkdir /workspace/attacks
