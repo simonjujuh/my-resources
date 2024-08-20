@@ -13,7 +13,7 @@ setopt sharehistory
 alias ll="exa -lag --group-directories-first"
 # alias ll='exa -la --group-directories-first --no-user --no-filesize --no-time --no-permissions'
 
-# source /workspace/.env
+source /workspace/.env
 # WORKDIR=/workspace
 # TARGETS=/workspace/targets
 # ATTACKS=/workspace/attacks
