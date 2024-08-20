@@ -1,4 +1,7 @@
 # List of repos you want to pull, with path
-https://github.com/1N3/BruteX, /opt/brutex
-https://github.com/1N3/IntruderPayloads, /opt/intruderpayloads
-https://github.com/swisskyrepo/PayloadsAllTheThings, /opt/paylall
+https://github.com/1N3/BruteX, /opt/my-resources/lists/brutex
+https://github.com/1N3/IntruderPayloads, /opt/my-resources/lists/intruderpayloads
+https://github.com/danielmiessler/SecLists, /opt/my-resources/lists/seclists
+#https://github.com/fuzzdb-project/fuzzdb, /opt/my-resources/lists/fuzzdb
+https://github.com/swisskyrepo/PayloadsAllTheThings, /opt/my-resources/lists/patt
+https://github.com/Bo0oM/fuzz.txt, /opt/my-resources/lists/fuzz.txt
