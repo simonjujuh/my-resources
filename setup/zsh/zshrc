@@ -10,7 +10,7 @@ autoload -Uz compinit && compinit
 setopt incappendhistory
 setopt sharehistory
 
-alias ll="exa -la --group-directories-first"
+alias ll="exa -lag --group-directories-first"
 # alias ll='exa -la --group-directories-first --no-user --no-filesize --no-time --no-permissions'
 
 # source /workspace/.env
