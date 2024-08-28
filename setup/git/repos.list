@@ -2,6 +2,6 @@
 https://github.com/1N3/BruteX, /opt/my-resources/lists/brutex
 https://github.com/1N3/IntruderPayloads, /opt/my-resources/lists/intruderpayloads
 https://github.com/danielmiessler/SecLists, /opt/my-resources/lists/seclists
-#https://github.com/fuzzdb-project/fuzzdb, /opt/my-resources/lists/fuzzdb
 https://github.com/swisskyrepo/PayloadsAllTheThings, /opt/my-resources/lists/patt
 https://github.com/Bo0oM/fuzz.txt, /opt/my-resources/lists/fuzz.txt
+https://github.com/tarraschk/richelieu, /opt/my-resources/lists/richelieu
