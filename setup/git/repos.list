@@ -1,7 +1,10 @@
 # List of repos you want to pull, with path
+# Wordlists
 https://github.com/1N3/BruteX, /opt/my-resources/lists/brutex
 https://github.com/1N3/IntruderPayloads, /opt/my-resources/lists/intruderpayloads
 https://github.com/danielmiessler/SecLists, /opt/my-resources/lists/seclists
 https://github.com/swisskyrepo/PayloadsAllTheThings, /opt/my-resources/lists/patt
 https://github.com/Bo0oM/fuzz.txt, /opt/my-resources/lists/fuzz.txt
 https://github.com/tarraschk/richelieu, /opt/my-resources/lists/richelieu
+# Tools
+https://github.com/CiscoCXSecurity/udp-proto-scanner, /opt/my-resources/tools/udp-proto-scanner

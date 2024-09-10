@@ -3,3 +3,5 @@
 # All packages listed below will be installed automatically with pip3 when creating a new Exegol container.
 hashid
 updog
+bypass-url-parser
+waymore
