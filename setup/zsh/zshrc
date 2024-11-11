@@ -12,6 +12,7 @@ setopt sharehistory
 
 alias ll="exa -lag --group-directories-first"
 # alias ll='exa -la --group-directories-first --no-user --no-filesize --no-time --no-permissions'
+export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
 
 source /workspace/.env
 # WORKDIR=/workspace
