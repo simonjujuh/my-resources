@@ -3,3 +3,4 @@
 # All addons listed below will be downloaded and installed automatically when creating a new Exegol container.
 https://addons.mozilla.org/fr/firefox/addon/multi-account-containers/
 https://addons.mozilla.org/fr/firefox/addon/cookie-quick-manager/
+https://addons.mozilla.org/fr/firefox/addon/ublock-origin/

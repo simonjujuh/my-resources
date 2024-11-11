@@ -14,6 +14,7 @@ vim +PluginInstall +qall
 
 # Install tmux plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm || true
+tmux source ~/.tmux.conf
 /bin/bash ~/.tmux/plugins/tpm/bin/install_plugins
 
 # Nxc configuration

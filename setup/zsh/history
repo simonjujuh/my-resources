@@ -1,2 +1,4 @@
 # Config file dedicated to the user's personal history shared between all exegol containers
 stty raw -echo; fg; ls; export SHELL=/bin/bash; export TERM=xterm;
+udp-proto-scanner.pl -f $TARGETS_FILE
+udp-proto-scanner.pl $TARGET

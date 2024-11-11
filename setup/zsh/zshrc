@@ -14,7 +14,7 @@ alias ll="exa -lag --group-directories-first"
 # alias ll='exa -la --group-directories-first --no-user --no-filesize --no-time --no-permissions'
 export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=gasp'
 
-source /workspace/.env
+touch /workspace/.env && source /workspace/.env
 # WORKDIR=/workspace
 # TARGETS=/workspace/targets
 # ATTACKS=/workspace/attacks
@@ -23,3 +23,7 @@ source /workspace/.env
 # DIR_LOOT=/workspace/loot
 # DIR_ATTACKS=/workspace/attacks
 # DC_HOST=$DC
+
+# Go installation
+ln -sf /root/.asdf/installs/golang/1.22.2/packages ~/go
+export PATH="$HOME/go/bin:$PATH"
