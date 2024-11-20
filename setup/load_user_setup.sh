@@ -52,7 +52,29 @@ then
     echo "PASSWORD_ADM=''" >> $FILE
 fi
 
-# # build internal pentest tree
+ln -sf /opt/my-resources/lists /root/wordlists
+ln -sf /opt/my-resources/tools /root/tools
+
+# build internal pentest tree
+mkdir /workspace/notes
+touch /workspace/notes/1.infos.md
+touch /workspace/notes/2.scope.md
+touch /workspace/notes/3.attacks.md
+touch /workspace/notes/4.services.md
+touch /workspace/notes/5.webapps.md
+touch /workspace/notes/6.ad.md
+touch /workspace/notes/7.hosts.md
+touch /workspace/notes/8.shares.md
+touch /workspace/notes/9.questions.md
+mkdir /workspace/lists
+touch /workspace/lists/users
+touch /workspace/lists/pwds
+touch /workspace/lists/credz
+mkdir /workspace/logs
+mkdir /workspace/loots
+mkdir /workspace/scope
+mkdir /workspace/scan
+
 # mkdir /workspace/attacks
 # mkdir /workspace/attacks/adcs
 # mkdir /workspace/attacks/crack
