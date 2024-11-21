@@ -9,13 +9,13 @@ set -e
 # The /opt/supported_setups.md file lists the supported configurations that can be made easily.
 
 # Install vim plugins
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim || true
-vim +PluginInstall +qall
+# git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim || true
+# vim +PluginInstall +qall
 
 # Install tmux plugins
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm || true
-tmux source ~/.tmux.conf
-/bin/bash ~/.tmux/plugins/tpm/bin/install_plugins
+# git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm || true
+# tmux source ~/.tmux.conf
+# /bin/bash ~/.tmux/plugins/tpm/bin/install_plugins
 
 # Nxc configuration
 cp -r /opt/my-resources/setup/nxc/nxc.conf /root/.nxc/nxc.conf
