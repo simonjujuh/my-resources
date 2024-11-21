@@ -3,7 +3,8 @@
 # Utilities
 alias clear='clear -x'
 alias tmux='tmux -2'
-
+alias vim='subl'
+alias nano='subl'
 
 # Tools
 alias burl='curl -k -x http://127.0.0.1:8080'
